@@ -1,0 +1,24 @@
+{
+  "name": "nodeapis",
+  "version": "1.0.0",
+  "description": "Project using 2 APIs (OpenWeatherMaps & Spotify)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Byounes123321/NodeAPIs.git"
+  },
+  "author": "Bassil Younes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Byounes123321/NodeAPIs/issues"
+  },
+  "homepage": "https://github.com/Byounes123321/NodeAPIs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "pug": "^3.0.2"
+  }
+}
