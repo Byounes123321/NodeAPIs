@@ -3,9 +3,10 @@ doctype html
 html 
     head 
         meta(charset= "utf-8")
-        title #{title} | test site 
+        title #{title}
         block scripts 
-    body 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js") 
+        script(src="/script.js")    
         header#header
             div.header-content
                 h2#site-name
