@@ -1,4 +1,4 @@
-function getLocation() {
+ async function getLocation() {
     return new Promise((resolve, reject) => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => resolve(position.coords));
@@ -8,7 +8,7 @@ function getLocation() {
     });
   }
   
-  async function getUserLocation() {
+   async function getUserLocation() {
     try {
       const coords = await getLocation();
       return { "latitude": coords.latitude, "longitude": coords.longitude };

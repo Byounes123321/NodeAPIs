@@ -38,6 +38,7 @@ app.get("/", async (req, res) =>{
 app.listen(port, () =>{
     console.log(`listening on http://localhost:${port}`);
 });
-console.log("index.js", location)
+
+console.log("index.js: ",location())
 
 module.exports = location;

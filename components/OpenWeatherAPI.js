@@ -24,8 +24,8 @@ async function getLocation(){
 }
 
 async function getWeather(){
-let location = getUserLocation();
-console.log("getWeather",location);
+let location = await getLocation();
+console.log("getWeather",location.latitude);
 let url = "https://api.openweathermap.org/data/2.5/weather?lat="+location.latitude+"&lon="+location.longitude+"&appid="+ process.env.WEATHERAPI;
 var response = await fetch(
     url,
